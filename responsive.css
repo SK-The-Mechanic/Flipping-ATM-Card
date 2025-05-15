@@ -1,0 +1,90 @@
+@media (max-width: 720px) {
+    .balls {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .balls::before {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        transform: translate(-100px, -100px);
+    }
+
+    .balls::after {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        transform: translate(100px, 100px);
+    }
+
+    .card{
+        height: 35%;
+        width: 90%;
+    }
+
+    .front-side{
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-part{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    #img-1{
+        height: 3vh;
+        width: auto;
+    }
+
+    #img-2{
+        height: 3vh;
+        width: auto;
+    }
+
+    #img-3{
+        height: 3vh;
+        width: auto;
+        grid-column: 3 / 3;
+        align-self: center;
+        margin-left: 13vw;
+    }
+
+    #card-type{
+        margin: 1.5vh 0 0 -5vw;
+    }
+
+    #bank-name{
+        font-size: 1vh;
+        margin-left: 3vw;
+    }
+
+    #card-number{
+        font-size: 2vh;
+        margin-top: 0;
+    }
+
+    #user-name{
+        font-size: 2vh;
+        margin-top: -2vh;
+    }
+
+    #validity{
+        font-size: 1vh;
+        margin-top: 2vh;
+    }
+
+    #nexus{
+        font-size: large;
+    }
+
+    #other-info p{
+        font-size: 3vw;
+    }
+}

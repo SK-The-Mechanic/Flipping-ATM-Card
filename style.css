@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background: rgb(33, 31, 31);
+}
+
+.balls{
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.balls::before{
+    content: '';
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+    transform: translate(-150px, -100px);
+}
+
+.balls::after{
+    content: '';
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+    transform: translate(150px, 100px);
+}
+
+.front-side{
+    height: 31vh;
+    width: 27vw;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 25px 45px 0 rgba(0, 0, 0, .25);
+    backdrop-filter: blur(25px);
+    position: relative;
+}
+
+.stock-img{
+    display: flex;
+    position: relative;
+}
+
+.stock-img img{
+    height: 35px;
+    width: 50px;
+}
+
+#img-1{
+    margin: 80px 0 0 13px;
+    position: absolute;
+}
+
+#img-2{
+    margin: 9px 0 0 13px;
+    position: absolute;
+    height: 49px;
+    width: 75px;
+}
+
+#img-3{
+    position: absolute;
+    margin: 190px 0 0 169px;
+}
+
+#card-type{
+    position: absolute;
+    margin: 28px 0 0 23px;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+}
+
+#card-number{
+    position: absolute;
+    margin: 123px 0 0 13px;
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+
+#user-name{
+    position: absolute;
+    margin: 163px 0 0 13px;
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+#validity{
+    position: absolute;
+    margin: 195px 0 0 13px;
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+#bank-name{
+    position: absolute;
+    margin: 199px 0 0 225px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+#nexus{
+    position: relative;
+    margin: 9px 0 0 325px;
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto', sans-serif;
+}
